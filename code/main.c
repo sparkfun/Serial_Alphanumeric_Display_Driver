@@ -1,7 +1,39 @@
 /*
-	Created on: April 20, 2010
-	Under project: MPL115A1
-	By: Jim Lindblom
+	Created on: July 20, 2010
+	by: Jim Lindblom
+	AlphaNumeric Display Driver
+	
+	Send a serial character to the ATmega328 and it'll display it on the 16-segment display.
+	
+	Hardware: Arduino Pro connected to a STP16CP05 connected to a 16-segment display.
+	Connections:
+	Arduino Pro -------------	STP16CP05
+		D10	---------------------	LE
+		D11	---------------------	SDI	
+		D12 ---------------------	SDO
+		D13	---------------------	CLK
+		D9	---------------------	OE
+	
+	 AlphaNumeric Display-------STP16CP05 (Pin-to-pin)
+			2	------------------	5
+			2	------------------	18
+			21	------------------	17
+			16	------------------	15
+			10	------------------	10
+			14	------------------	13
+			9	------------------	9
+			4	------------------	7
+			7	------------------	8
+			19	------------------	16
+			3	------------------	6
+			24	------------------	20
+			23	------------------	19
+			15	------------------	14
+			12	------------------	12
+			11	------------------	11
+	
+	AlphaNumeric Display Anodes connected to +7-9V (depends on color/forward voltage).
+	Arduino Pro powered with 5V at raw. 3.3V regulated on Arduino is sent to STP16CP05.
 */
 
 //======================//
