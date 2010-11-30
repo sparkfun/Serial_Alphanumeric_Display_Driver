@@ -1,6 +1,6 @@
 This is a very basic library for SparkFun's Alpha-Numeric Display Driver (http://www.sparkfun.com/products/10103).
 
-License: Creative Commons BY-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/) - Use it however you'd like, but attribution would be great! I'd love to hear how you're using the library (jim@sparkfun.com). Definitely let me know if you've added to the library, there's room for improvement...
+License: Creative Commons BY-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/) - Use it however you'd like, but attribution would be great! I'd love to hear how you're using the library (jim@sparkfun.com). Definitely let me know if you've added to the library, there's room for improvement... If you encounter any bugs, please add them to the issues tab in the git repository (https://github.com/jimbloom/alphanumericDisplayDriver/issues).
 
 Install: After extracting the library place the 'AlphaNumeric_Driver' folder into your Arduino 'libraries' folder. On my standard windows install this is at C:\Documents and Settings\myname\My Documents\Arduino\libraries. After copying the library, if you have Arduino already open, you'll need to close and re-open it.
 
