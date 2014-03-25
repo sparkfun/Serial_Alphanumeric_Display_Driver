@@ -1,13 +1,31 @@
-/*
-  AlphaNumeric_Driver.h - Arduino library to control a string of AlphaNumeric Display Drivers
-	
-  License: Beerware.
-*/
+/******************************************************************************
+AlphaNumeric_Driver.h
+AlphaNumeric Driver Library Header File
+Jim Lindblom @ SparkFun Electronics
+Original Creation Date: Nov 30, 2010
+Edit Date: March 25, 2014
+https://github.com/sparkfun/Serial_Alphanumeric_Display_Driver
+
+Development environment specifics:
+	IDE: Arduino 1.0.5
+	Hardware Platform: SparkFun Redboard
+
+This code is beerware; if you see me (or any other SparkFun employee) at the
+local, and you've found our code helpful, please buy us a round!
+
+Distributed as-is; no warranty is given.
+******************************************************************************/
 
 #ifndef AlphaNumeric_Driver_H
 #define AlphaNumeric_Driver_H
 
 #include <inttypes.h>
+
+#if defined(ARDUINO) && ARDUINO >= 100
+#include "Arduino.h"
+#else
+#include "WProgram.h"
+#endif
 
 // Bit position relating display pin to driver output pin
 //		SEG	OUT#	LED		Allegro

@@ -1,14 +1,24 @@
-/*
-  AlphaNumeric_Driver.cpp - Arduino library to control a string of AlphaNumeric Display Drivers
-	
-  License: Beerware.
-*/
+/******************************************************************************
+AlphaNumeric_Driver.cpp
+AlphaNumeric Driver Library Source File
+Jim Lindblom @ SparkFun Electronics
+Original Creation Date: Nov 30, 2010
+Edit Date: March 25, 2014
+https://github.com/sparkfun/Serial_Alphanumeric_Display_Driver
+
+This file implements all functions of the AlphaNumeric Driver class
+
+Development environment specifics:
+	IDE: Arduino 1.0.5
+	Hardware Platform: SparkFun Redboard
+
+This code is beerware; if you see me (or any other SparkFun employee) at the
+local, and you've found our code helpful, please buy us a round!
+
+Distributed as-is; no warranty is given.
+******************************************************************************/
 
 #include "AlphaNumeric_Driver.h"
-
-extern "C" {
-   #include "wiring.h"
-}
 
 // Constructor initializes the pins and clears the displays
 alphaNumeric::alphaNumeric(const int SDI, const int CLK, const int LE, const int OE, const int displays)
